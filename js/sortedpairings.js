@@ -87,7 +87,7 @@ const nomiAutorizzati = [
 ];
 
 async function richiestaJson() {
-    const nomeJson = "https://zzux4dndye64nfcxefs3czn7dm0mgeai.lambda-url.eu-central-1.on.aws/?v=" + Date.now();
+    const nomeJson = "/.netlify/functions/proxy?v=" + Date.now();
     const rispostaJson = await fetch(nomeJson);
     const datiJson = await rispostaJson.json();
     modificaTitolo(datiJson.data);
