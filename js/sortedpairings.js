@@ -162,7 +162,7 @@ function stampaPairings(data) {
     var contenutoTable = '';
     for (var i = 0; i < data.length; i++) {
         // Filtra solo i giocatori autorizzati
-        if (!nomiAutorizzati.includes(data[i].player1) && !nomiAutorizzati.includes(data[i].player2)) {
+        if (!nomiAutorizzati.includes(data[i].player1)) {
             continue;  // Salta la riga se nessun giocatore è autorizzato
         }
 
